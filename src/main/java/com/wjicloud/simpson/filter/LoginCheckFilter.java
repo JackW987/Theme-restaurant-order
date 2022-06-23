@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * 判断是否未登录就直接访问内部页面
+ * 采用过滤器的形式
+ */
 @WebFilter(filterName = "loginCheckFilter",urlPatterns = "/*")
 @Slf4j
 public class LoginCheckFilter implements Filter {

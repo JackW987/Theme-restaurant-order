@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDateTime;
 
+/**
+ * Controller层
+ */
 @Slf4j
 @RestController
 @RequestMapping("/employee")
@@ -41,7 +44,7 @@ public class EmployeeController {
             return R.error("账号已被禁用");
         }
         // 查询成功将数据放到session
-//        request.getSession().setAttribute("employee",emp.getId());
+        request.getSession().setAttribute("employee",emp.getId());
         return R.success(emp);
     }
     @PostMapping("/logout")
@@ -69,6 +72,6 @@ public class EmployeeController {
     }
     @GetMapping("/page")
     public void page(){
-
+        System.out.println(1);
     }
 }

@@ -10,6 +10,11 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+/**
+ * Employee实体类
+ * 切记 @RequestBody会给基本数据类型赋值
+ * 所以id要用引用类型Long 不能用long
+ */
 @Data
 public class Employee implements Serializable {
     private static final long serialVersionUID = 1L;
