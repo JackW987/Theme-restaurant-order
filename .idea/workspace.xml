@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="01876b98-57de-4165-bce1-9dece0717afd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/common/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/common/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/config/MybatisPlusConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/config/WebMvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/EmployeeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/domain/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/filter/LoginCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/common/GlobalExceptionHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/common/GlobalExceptionHandle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/config/WebMvcConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/EmployeeController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +66,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/common" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -72,6 +74,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java_space\mvnProject\simpson\src\main\java\com\wjicloud\simpson\common" />
       <recent name="D:\java_space\mvnProject\simpson\src\main\resources" />
     </key>
   </component>
@@ -113,6 +116,7 @@
       <workItem from="1655907145252" duration="629000" />
       <workItem from="1655950513873" duration="151000" />
       <workItem from="1655952579928" duration="2784000" />
+      <workItem from="1655985696769" duration="7780000" />
     </task>
     <servers />
   </component>

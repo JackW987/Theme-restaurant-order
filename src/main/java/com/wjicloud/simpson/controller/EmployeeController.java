@@ -2,10 +2,12 @@ package com.wjicloud.simpson.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.wjicloud.simpson.common.R;
 import com.wjicloud.simpson.domain.Employee;
 import com.wjicloud.simpson.service.EmployeeService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.*;
@@ -55,23 +57,47 @@ public class EmployeeController {
 
     @PostMapping
     public R<String> save(HttpServletRequest request,@RequestBody Employee employee){
-        System.out.println(employee);
         // 设置默认密码 md5 password加密
         employee.setPassword(DigestUtils.md5DigestAsHex("123456".getBytes()));
-        // 设置创建时间
-        employee.setCreateTime(LocalDateTime.now());
-        // 设置更新时间
-        employee.setUpdateTime(LocalDateTime.now());
-        // 设置创建人
-        Long empId = (Long) request.getSession().getAttribute("employee");
-        employee.setCreateUser(empId);
-        // 设置更新人
-        employee.setUpdateUser(empId);
+//        // 设置创建时间
+//        employee.setCreateTime(LocalDateTime.now());
+//        // 设置更新时间
+//        employee.setUpdateTime(LocalDateTime.now());
+//        // 设置创建人
+//        Long empId = (Long) request.getSession().getAttribute("employee");
+//        employee.setCreateUser(empId);
+//        // 设置更新人
+//        employee.setUpdateUser(empId);
         boolean save = employeeService.save(employee);
         return R.success("新增成功");
     }
     @GetMapping("/page")
-    public void page(){
-        System.out.println(1);
+    public R<Page> page(int page,int pageSize,String name){
+        // 构造分页构造器
+        Page pageInfo = new Page(page,pageSize);
+        // 根据name查询
+        LambdaQueryWrapper<Employee> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.like(StringUtils.isNotEmpty(name),Employee::getName,name);
+        // 排序查询
+        queryWrapper.orderByDesc(Employee::getUpdateTime);
+        //执行查询
+        employeeService.page(pageInfo,queryWrapper);
+        return R.success(pageInfo);
+    }
+    @PutMapping
+    public R<String> update(HttpServletRequest request,@RequestBody Employee employee){
+//        Long empId = (Long) request.getSession().getAttribute("employee");
+//        employee.setUpdateTime(LocalDateTime.now());
+//        employee.setUpdateUser(empId);
+        employeeService.updateById(employee);
+        return R.success("修改成功");
+    }
+    @GetMapping("/{id}")
+    public R<Employee> getById(@PathVariable("id") Long id){
+        Employee employee = employeeService.getById(id);
+        if(employee!=null){
+            return R.success(employee);
+        }
+        return R.error("没有查询到对应员工信息");
     }
 }

@@ -31,7 +31,6 @@ public class LoginCheckFilter implements Filter {
                 "/employee/logout",
                 "/backend/**",
                 "/front/**",
-
         };
         // 检查
         boolean check = check(urls, requestURI);
@@ -47,8 +46,8 @@ public class LoginCheckFilter implements Filter {
             return;
         }
         // 登录状态检测失败，返还结果给前端
+        // 这里直接拦截然后response回去了，不需要filterChain放行了
         response.getWriter().write(JSON.toJSONString(R.error("NOTLOGIN")));
-        filterChain.doFilter(request,response);
         return;
     }
 

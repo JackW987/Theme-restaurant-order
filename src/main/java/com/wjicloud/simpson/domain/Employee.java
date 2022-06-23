@@ -26,7 +26,12 @@ public class Employee implements Serializable {
     private String sex;
     private String idNumber;
     private Integer status;
+    /**
+     * 设置不同的操作时使用公共字段填充策略
+     */
+    @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createTime;
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private LocalDateTime updateTime;
     @TableField(fill = FieldFill.INSERT)
     private Long createUser;
