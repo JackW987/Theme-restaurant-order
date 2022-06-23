@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01876b98-57de-4165-bce1-9dece0717afd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/SimpsonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/SimpsonApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/backend/js/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/backend/js/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/config/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/domain/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/filter/LoginCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/domain/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/domain/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/filter/LoginCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/filter/LoginCheckFilter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +107,12 @@
       <workItem from="1655646892353" duration="1511000" />
       <workItem from="1655693367184" duration="3000" />
       <workItem from="1655727230206" duration="7380000" />
+      <workItem from="1655779916129" duration="17000" />
+      <workItem from="1655809574506" duration="54000" />
+      <workItem from="1655870496507" duration="8000" />
+      <workItem from="1655901015735" duration="5714000" />
+      <workItem from="1655907145252" duration="629000" />
+      <workItem from="1655950513873" duration="27000" />
     </task>
     <servers />
   </component>
@@ -121,5 +129,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
