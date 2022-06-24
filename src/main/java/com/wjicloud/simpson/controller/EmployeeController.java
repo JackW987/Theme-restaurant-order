@@ -89,6 +89,8 @@ public class EmployeeController {
 //        Long empId = (Long) request.getSession().getAttribute("employee");
 //        employee.setUpdateTime(LocalDateTime.now());
 //        employee.setUpdateUser(empId);
+        long id = Thread.currentThread().getId();
+        log.info("当前线程id:" + id);
         employeeService.updateById(employee);
         return R.success("修改成功");
     }

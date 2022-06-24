@@ -1,6 +1,7 @@
 package com.wjicloud.simpson.filter;
 
 import com.alibaba.fastjson.JSON;
+import com.wjicloud.simpson.common.BaseContext;
 import com.wjicloud.simpson.common.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.AntPathMatcher;
@@ -42,6 +43,9 @@ public class LoginCheckFilter implements Filter {
         //检查失败，为非放行路径，检查登录状态
         Object employee = request.getSession().getAttribute("employee");
         if(employee!=null){
+            Long empId = (Long) employee;
+            BaseContext.setCurrentId(empId);
+
             filterChain.doFilter(request,response);
             return;
         }
