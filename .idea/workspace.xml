@@ -6,11 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="01876b98-57de-4165-bce1-9dece0717afd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/common/myMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/common/myMetaObjectHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/common/GlobalExceptionHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/common/GlobalExceptionHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/domain/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/filter/LoginCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/common/myMetaObjectHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/common/myMetaObjectHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/backend/api/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/backend/api/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/api/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/api/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/common/GlobalExceptionHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/common/GlobalExceptionHandle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/domain/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/domain/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/filter/LoginCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/filter/LoginCheckFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/service/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/service/impl/CategoryServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +72,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/domain" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/backend/page" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -71,9 +80,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java_space\mvnProject\simpson\src\main\resources\backend\page" />
       <recent name="D:\java_space\mvnProject\simpson\src\main\java\com\wjicloud\simpson\domain" />
       <recent name="D:\java_space\mvnProject\simpson\src\main\java\com\wjicloud\simpson\common" />
       <recent name="D:\java_space\mvnProject\simpson\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java_space\mvnProject\simpson\src\main\resources\backend\page" />
+      <recent name="D:\java_space\mvnProject\simpson\src\main\resources\common" />
+      <recent name="D:\java_space\mvnProject\simpson\src\main\resources\backend" />
     </key>
   </component>
   <component name="RunManager">
@@ -116,6 +131,8 @@
       <workItem from="1655952579928" duration="2784000" />
       <workItem from="1655985696769" duration="7780000" />
       <workItem from="1656068468355" duration="3874000" />
+      <workItem from="1656229042852" duration="3152000" />
+      <workItem from="1656232244707" duration="5925000" />
     </task>
     <servers />
   </component>
@@ -140,6 +157,11 @@
           <properties class="java.lang.NumberFormatException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/service/impl/CategoryServiceImpl.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
