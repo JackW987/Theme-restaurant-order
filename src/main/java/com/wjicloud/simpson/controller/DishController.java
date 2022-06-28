@@ -55,7 +55,7 @@ public class DishController {
     }
 
     /**
-     * 回显数据
+     * 修改菜品回显数据
      * @param id
      * @return
      */
@@ -113,4 +113,30 @@ public class DishController {
         dishDtoPage.setRecords(list);
         return R.success(dishDtoPage);
     }
+
+    /**
+     * 根据种类查询菜品
+     */
+    @GetMapping("/list")
+    public R<List<Dish>> getDish(Dish dish){
+        // 初始化条件构造器
+        LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
+        // 添加查询条件
+        queryWrapper.eq(dish.getCategoryId()!=null,Dish::getCategoryId,dish.getCategoryId());
+        // 查询是起售状态的菜品
+        queryWrapper.eq(Dish::getStatus,1);
+        // 添加排序条件
+        queryWrapper.orderByAsc(Dish::getSort).orderByDesc(Dish::getUpdateTime);
+        // 执行查询
+        List<Dish> list = dishService.list(queryWrapper);
+
+        return R.success(list);
+    }
+
+    @DeleteMapping
+    public R<String> delete(Long ids){
+        dishService.removeById(ids);
+        return R.success("删除成功");
+    }
 }
+

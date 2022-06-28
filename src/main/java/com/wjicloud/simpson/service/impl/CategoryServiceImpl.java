@@ -32,7 +32,6 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
             // 报业务层错误，因为该分类关联菜品
             throw new CustomException("当前分类下关联了菜品，不能删除");
         }
-
         LambdaQueryWrapper<Setmeal> SetmealQueryWrapper = new LambdaQueryWrapper<>();
         SetmealQueryWrapper.eq(Setmeal::getCategoryId,id);
         int count2 = setmealService.count(SetmealQueryWrapper);
