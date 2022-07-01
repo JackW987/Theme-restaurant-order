@@ -7,14 +7,80 @@
     <list default="true" id="01876b98-57de-4165-bce1-9dece0717afd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/DishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/mapper/SetmealMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/mapper/SetmealMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/SetmealController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/filter/LoginCheckFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/service/SetmealService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/service/SetmealService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/service/impl/CategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/service/impl/SetmealServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/service/impl/SetmealServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/api/address.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/api/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/api/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/api/order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/fonts/DIN-Bold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/fonts/DIN-Medium.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/fonts/PingFangSC-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/fonts/PingFangSC-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/fonts/PingFangSC-Semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/cart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/cart_active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/checked_false.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/checked_true.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/demo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/demo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/demo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/demo4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/favico.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/headPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/location.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/locations.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/mainBg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/money.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/noImg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/no_order.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/no_wifi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/orders.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/subtract.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/time.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/women.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/js/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/js/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/js/vant.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/page/add-order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/page/address-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/page/address.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/page/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/page/no-wify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/page/order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/page/pay-success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/page/user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/add-order.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/address-edit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/address.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/no-wify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/order.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/pay-success.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/user.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/vant.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/DishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/DishController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/mapper/SetmealMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/mapper/SetmealMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/service/impl/CategoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/SetmealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/SetmealController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/filter/LoginCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/filter/LoginCheckFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/service/SetmealService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/service/SetmealService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/service/impl/SetmealServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/service/impl/SetmealServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/api/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/api/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/api/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/js/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/js/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/page/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/page/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +140,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.wjicloud.simpson.controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\java_space\mvnProject\simpson\src\main\java\com\wjicloud\simpson\domain" />
-      <recent name="D:\java_space\mvnProject\simpson\src\main\resources\backend\page" />
-      <recent name="D:\java_space\mvnProject\simpson\src\main\java\com\wjicloud\simpson\common" />
+      <recent name="D:\java_space\mvnProject\simpson\src\main\java\com\wjicloud\simpson\controller" />
       <recent name="D:\java_space\mvnProject\simpson\src\main\resources" />
+      <recent name="D:\java_space\mvnProject\simpson\src\main\resources\front" />
+      <recent name="D:\java_space\mvnProject\simpson\src\main\java\com\wjicloud\simpson\utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\java_space\mvnProject\simpson\src\main\resources\backend\page" />
@@ -131,6 +201,11 @@
       <workItem from="1656243971752" duration="9670000" />
       <workItem from="1656299466622" duration="12000" />
       <workItem from="1656334758804" duration="5473000" />
+      <workItem from="1656418913807" duration="5822000" />
+      <workItem from="1656507419180" duration="5460000" />
+      <workItem from="1656558917614" duration="6000" />
+      <workItem from="1656592545150" duration="5550000" />
+      <workItem from="1656659053187" duration="371000" />
     </task>
     <servers />
   </component>

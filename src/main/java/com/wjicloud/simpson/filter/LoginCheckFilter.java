@@ -33,7 +33,9 @@ public class LoginCheckFilter implements Filter {
                 "/backend/**",
                 "/front/**",
                 "/backend/page/demo/**",
-                "/common/**"
+                "/common/**",
+                "/user/sendMsg",
+                "/user/login"
         };
         // 检查
         boolean check = check(urls, requestURI);
@@ -47,6 +49,15 @@ public class LoginCheckFilter implements Filter {
         if(employee!=null){
             Long empId = (Long) employee;
             BaseContext.setCurrentId(empId);
+
+            filterChain.doFilter(request,response);
+            return;
+        }
+        //判断移动端用户是否登录
+        Object user = request.getSession().getAttribute("user");
+        if(user!=null){
+            Long userId = (Long) user;
+            BaseContext.setCurrentId(userId);
 
             filterChain.doFilter(request,response);
             return;
