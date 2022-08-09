@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="01876b98-57de-4165-bce1-9dece0717afd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +140,7 @@
       <workItem from="1657628217217" duration="1429000" />
       <workItem from="1659681027212" duration="1344000" />
       <workItem from="1659965298562" duration="1044000" />
+      <workItem from="1660013435581" duration="1669000" />
     </task>
     <servers />
   </component>
