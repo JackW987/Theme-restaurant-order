@@ -14,10 +14,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 /**
@@ -33,6 +35,8 @@ public class DishController {
     private DishFlavorService dishFlavorService;
     @Autowired
     private CategoryService categoryService;
+    @Autowired
+    private RedisTemplate redisTemplate;
     /**
      * 新增菜品
      * @param dishDto
@@ -41,6 +45,9 @@ public class DishController {
     @PostMapping
     public R<String> save(@RequestBody DishDto dishDto){
         dishService.saveWithFlavor(dishDto);
+        // 增删改操作清除Redis缓存
+        String key = "dish_" + dishDto.getCategoryId() + "_1";
+        redisTemplate.delete(key);
         return R.success("新增菜品成功");
     }
 
@@ -52,6 +59,9 @@ public class DishController {
     @PutMapping
     public R<String> update(@RequestBody DishDto dishDto){
         dishService.updateWithFlavors(dishDto);
+        // 增删改操作清除Redis缓存
+        String key = "dish_" + dishDto.getCategoryId() + "_1";
+        redisTemplate.delete(key);
         return R.success("新增菜品成功");
     }
 
@@ -136,6 +146,13 @@ public class DishController {
 
     @GetMapping("/list")
     public R<List<DishDto>> getDish(Dish dish){
+        List<DishDto> dishDtoList = null;
+        String key = "dish_" + dish.getCategoryId() + "_" + dish.getStatus();// dish_3865xxx_1
+        // 先从redis中获取缓存数据
+        dishDtoList = (List<DishDto>) redisTemplate.opsForValue().get(key);
+        if(dishDtoList!=null){
+            return R.success(dishDtoList);
+        }
         // 初始化条件构造器
         LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
         // 添加查询条件
@@ -147,7 +164,7 @@ public class DishController {
         // 执行查询
         List<Dish> list = dishService.list(queryWrapper);
 
-        List<DishDto> dishDtoList = list.stream().map((item)->{
+        dishDtoList = list.stream().map((item)->{
             // 创建一个空的dishDto接收值
             DishDto dishDto = new DishDto();
             // 将已有属性拷贝到dishDto中
@@ -171,6 +188,8 @@ public class DishController {
             return dishDto;
         }).collect(Collectors.toList());
 
+        // 如果不存在，将mysql中查询到的数据缓存到redis
+        redisTemplate.opsForValue().set(key,dishDtoList,60, TimeUnit.MINUTES);
         return R.success(dishDtoList);
     }
     @DeleteMapping
