@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01876b98-57de-4165-bce1-9dece0717afd" name="Changes" comment="" />
+    <list default="true" id="01876b98-57de-4165-bce1-9dece0717afd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/SimpsonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/SimpsonApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/common/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/common/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjicloud/simpson/controller/SetmealController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/SetmealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjicloud/simpson/controller/SetmealController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,7 +146,12 @@
       <workItem from="1659681027212" duration="1344000" />
       <workItem from="1659965298562" duration="1044000" />
       <workItem from="1660013435581" duration="6369000" />
+<<<<<<< HEAD
       <workItem from="1660031671119" duration="2621000" />
+=======
+      <workItem from="1660031671119" duration="1941000" />
+      <workItem from="1660113150659" duration="3019000" />
+>>>>>>> opt
     </task>
     <servers />
   </component>

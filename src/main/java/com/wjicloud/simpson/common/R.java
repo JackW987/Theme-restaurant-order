@@ -2,6 +2,7 @@ package com.wjicloud.simpson.common;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +11,7 @@ import java.util.Map;
  * @param <T>
  */
 @Data
-public class R<T> {
+public class R<T> implements Serializable {
     private Integer code;
     private String msg;
     private T data;
